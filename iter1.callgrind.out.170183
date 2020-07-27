@@ -1,0 +1,402 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 40
+
+fl=
+fn=String::to_s
+0 5
+
+fl=
+fn=String::encode
+0 14
+
+fl=
+fn=Symbol::to_s
+0 1
+
+fl=
+fn=Hash::keys
+0 2
+
+fl=
+fn=JSON/Ext/Generator/State::initialize_copy
+0 1
+
+fl=
+fn=Kernel::initialize_dup
+0 2
+cfl=
+cfn=JSON/Ext/Generator/State::initialize_copy
+calls=1 0
+0 1
+
+fl=
+fn=Kernel::dup
+0 2
+cfl=
+cfn=Kernel::initialize_dup
+calls=1 0
+0 3
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 30
+cfl=
+cfn=Kernel::dup
+calls=1 0
+0 5
+cfl=
+cfn=Hash::keys
+calls=5 0
+0 2
+cfl=
+cfn=Symbol::to_s
+calls=1 0
+0 1
+cfl=
+cfn=String::encode
+calls=54 0
+0 14
+cfl=
+cfn=String::to_s
+calls=28 0
+0 5
+
+fl=
+fn=Date::iso8601
+0 15
+
+fl=
+fn=Array::reverse
+0 2
+
+fl=
+fn=Date::<=>
+0 5
+
+fl=
+fn=Integer::div
+0 8
+
+fl=
+fn=String::[]=
+0 7
+
+fl=
+fn=MatchData::end
+0 3
+
+fl=
+fn=MatchData::begin
+0 10
+
+fl=
+fn=Regexp::match
+0 22
+
+fl=
+fn=String::gsub!
+0 12
+
+fl=
+fn=Date::parse^
+0 264
+cfl=
+cfn=String::gsub!
+calls=15 0
+0 12
+cfl=
+cfn=Regexp::match
+calls=30 0
+0 22
+cfl=
+cfn=MatchData::begin
+calls=15 0
+0 10
+cfl=
+cfn=MatchData::end
+calls=15 0
+0 3
+cfl=
+cfn=String::[]=
+calls=15 0
+0 7
+cfl=
+cfn=Integer::div
+calls=15 0
+0 8
+
+fl=
+fn=Array::any?
+0 9
+cfl=
+cfn=String::upcase
+calls=11 110
+110 2
+
+fl=
+fn=Array::max
+0 1
+
+fl=
+fn=Integer::to_s
+0 3
+
+fl=
+fn=Array::sum
+0 1
+
+fl=
+fn=String::to_i
+0 6
+
+fl=
+fn=Hash::merge
+0 7
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::collect_stats_from_users
+126 4
+cfl=
+cfn=Array::each
+calls=7 127
+127 494
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=User::initialize
+12 2
+
+fl=
+fn=Class::new
+0 4
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=User::initialize
+calls=3 0
+0 2
+
+fl=
+fn=Array::select
+0 11
+
+fl=
+fn=Array::join
+0 6
+
+fl=
+fn=Array::uniq
+0 4
+
+fl=
+fn=Array::sort
+0 11
+cfl=
+cfn=Date::<=>
+calls=21 0
+0 5
+
+fl=
+fn=String::upcase
+0 9
+
+fl=
+fn=Array::map
+0 52
+cfl=
+cfn=String::upcase
+calls=30 71
+71 6
+cfl=
+cfn=String::to_i
+calls=30 95
+95 6
+cfl=
+cfn=Date::parse^
+calls=15 120
+120 327
+cfl=
+cfn=Date::iso8601
+calls=15 120
+120 15
+
+fl=
+fn=Array::all?
+0 19
+cfl=
+cfn=String::upcase
+calls=4 115
+115 1
+
+fl=
+fn=Array::count
+0 3
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::generate_report
+52 10
+cfl=
+cfn=Array::count
+calls=3 55
+55 2
+cfl=
+cfn=Array::each
+calls=2 59
+59 47
+cfl=
+cfn=Array::map
+calls=2 68
+68 11
+cfl=
+cfn=Array::sort
+calls=1 68
+68 3
+cfl=
+cfn=Array::uniq
+calls=1 68
+68 4
+cfl=
+cfn=Array::join
+calls=1 68
+68 3
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::collect_stats_from_users
+calls=7 89
+89 498
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::parse_session
+41 12
+cfl=
+cfn=String::split
+calls=15 42
+42 9
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::parse_user
+31 4
+cfl=
+cfn=String::split
+calls=3 32
+32 3
+
+fl=
+fn=Array::each
+0 83
+cfl=
+cfn=String::split
+calls=18 23
+23 12
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::parse_user
+calls=3 24
+24 6
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::parse_session
+calls=15 25
+25 21
+cfl=
+cfn=Array::all?
+calls=18 61
+61 20
+cfl=
+cfn=Array::select
+calls=3 81
+81 11
+cfl=
+cfn=Class::new
+calls=3 82
+82 7
+cfl=
+cfn=Array::count
+calls=3 90
+90 1
+cfl=
+cfn=Hash::merge
+calls=21 90
+90 7
+cfl=
+cfn=Array::map
+calls=33 95
+95 394
+cfl=
+cfn=Array::sum
+calls=3 95
+95 1
+cfl=
+cfn=Integer::to_s
+calls=6 95
+95 3
+cfl=
+cfn=Array::max
+calls=3 100
+100 1
+cfl=
+cfn=Array::sort
+calls=6 105
+105 13
+cfl=
+cfn=Array::join
+calls=3 105
+105 3
+cfl=
+cfn=Array::any?
+calls=3 110
+110 11
+cfl=
+cfn=Array::reverse
+calls=3 120
+120 2
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::parse_file_lines
+18 2
+cfl=
+cfn=Array::each
+calls=1 22
+22 57
+
+fl=
+fn=String::split
+0 31
+
+fl=
+fn=IO::read^
+0 22
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=Object::work
+134 12
+cfl=
+cfn=IO::read^
+calls=1 135
+135 22
+cfl=
+cfn=String::split
+calls=1 135
+135 6
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::parse_file_lines
+calls=1 137
+137 59
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::generate_report
+calls=1 153
+153 578
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 155
+155 56
+cfl=
+cfn=IO::write^
+calls=1 155
+155 40
+
+fl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+fn=TestMe::test_result
+186 19
+cfl=/home/dmitriy/devspace/learn/rails-optimization-task1/task-1.rb
+cfn=Object::work
+calls=1 186
+186 773
+
